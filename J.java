@@ -15,7 +15,7 @@ public class J {
         System.out.println("TU PADRE");
 
         System.out.println(
-                "Benvenuto nel programma pett SUS, per verificare se PUG top ha perso inserire top, per vedere se devi compensare inserire compensare, per vedere se la mid ha perso inserire mid, per vedere se l'account di gianluxa è andato inserire ban");
+                "Benvenuto nel programma pett SUS, per verificare se PUG top ha perso inserire top, per vedere se devi compensare inserire compensare, per vedere se la mid ha perso inserire mid, per vedere se l'account di gianluxa è andato inserire ban, il game si deve doggiare? inserire dodge");
         scelta = input.next();
 
         switch (scelta) {
@@ -73,7 +73,7 @@ public class J {
 
                 if (ban.equals("si")) {
 
-                    System.out.println("Vabbe dai ceeeeeeeeeeeee ci disintossichiamo");
+                    System.out.println("Vabbe dai ceeeeee ci disintossichiamo");
 
                 } else if (ban.equals("no")) {
 
@@ -83,6 +83,23 @@ public class J {
 
             }
                 break;
+
+                case "dodge": {
+                    System.out.println("Il tuo main è stato bannato?, conviene doggiare? si o no");
+                    ban = input.next();
+    
+                    if (ban.equals("si")) {
+    
+                        System.out.println("Vabbe dai ceeeeeeee 5 minuti di attesa");
+    
+                    } else if (ban.equals("no")) {
+    
+                        System.out.println("La draft continua");
+    
+                    }
+    
+                }
+                    break;
 
         }
     }
