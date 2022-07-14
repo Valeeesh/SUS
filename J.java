@@ -5,26 +5,30 @@ public class J {
 
         Scanner input = new Scanner(System.in);
 
-        int scelta;
-        int pett;
+        String scelta;
         int pp;
-        int midpersa;
+
+        String pett;
+        String midpersa;
+        String ban;
 
         System.out.println("TU PADRE");
+
         System.out.println(
-                "Benvenuto nel programma pett SUS, per verificare se PUG top ha perso inserire 1, per vedere se devi compensare inserire 2, per vedere se la mid ha perso inserire 3");
-        scelta = input.nextInt();
+                "Benvenuto nel programma pett SUS, per verificare se PUG top ha perso inserire top, per vedere se devi compensare inserire compensare, per vedere se la mid ha perso inserire mid, per vedere se l'account di gianluxa è andato inserire ban");
+        scelta = input.next();
+
         switch (scelta) {
 
-            case 1: {
-                System.out.println("Pug top ha perso?, se si 1 se no 0");
-                pett = input.nextInt();
+            case "top": {
+                System.out.println("Pug top ha perso?, si o no");
+                pett = input.next();
 
-                if (pett == 1) {
+                if (pett.equals("si")) {
 
                     System.out.println("Pug clash non giochi top vai giungla");
 
-                } else if (pett == 0) {
+                } else if (pett.equals("no")) {
 
                     System.out.println("Pug al clash non giochi top lo stesso");
 
@@ -32,7 +36,7 @@ public class J {
             }
                 break;
 
-            case 2: {
+            case "compensare": {
 
                 System.out.println("Inserisci grandezza PiPi");
                 pp = input.nextInt();
@@ -42,21 +46,38 @@ public class J {
                 }
 
                 else {
-                    System.out.println("non compensi neanche il cazzo");
+                    System.out.println("Non compensi");
                 }
 
             }
                 break;
-            case 3: {
-                System.out.println("La mid ha perso?, se si 1 se no 0");
-                midpersa = input.nextInt();
+            case "mid": {
+                System.out.println("La mid ha perso?,si o no");
+                midpersa = input.next();
 
-                if (midpersa == 1) {
+                if (midpersa.equals("si")) {
 
-                    System.out.println("Tastiera di gianluca rotta UwU");
-                } else if (midpersa == 0) {
+                    System.out.println("Tastiera di gianluca rotta UwU, forse anche il mouse però non si sa");
+                } else if (midpersa.equals("no")) {
 
                     System.out.println("La partita continua");
+
+                }
+
+            }
+                break;
+
+            case "ban": {
+                System.out.println("L'account di gianluxa è bannato?, si o no");
+                ban = input.next();
+
+                if (ban.equals("si")) {
+
+                    System.out.println("Vabbe dai ceeeeeeeeeeeee ci disintossichiamo");
+
+                } else if (ban.equals("no")) {
+
+                    System.out.println("La scalata al lv 800 continua");
 
                 }
 
