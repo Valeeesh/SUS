@@ -6,16 +6,15 @@ public class J {
         Scanner input = new Scanner(System.in);
 
         String scelta;
-        int pp;
-
         String pett;
         String midpersa;
         String ban;
-
+        String build;
+        int pp;
         System.out.println("TU PADRE");
 
         System.out.println(
-                "Benvenuto nel programma pett SUS, per verificare se PUG top ha perso inserire top, per vedere se devi compensare inserire compensare, per vedere se la mid ha perso inserire mid, per vedere se l'account di gianluxa è andato inserire ban, il game si deve doggiare? inserire dodge");
+                "Benvenuto nel programma pett SUS, per verificare se PUG top ha perso inserire top, per vedere se devi compensare inserire compensare, per vedere se la mid ha perso inserire mid, per vedere se l'account di gianluxa è andato inserire ban, il game si deve doggiare? inserire dodge, la build di valeeesh di pantheon è worth?, inserire build");
         scelta = input.next();
 
         switch (scelta) {
@@ -101,6 +100,22 @@ public class J {
                 }
                     break;
 
+                    case "build":{
+
+                        System.out.println("la build fa schifo");
+                        build = input.next();
+        
+                        if (build.equals("si")) {
+        
+                            System.out.println("non sai un cazzo stai zitto gatto di merda");
+        
+                        } else if (build.equals("no")) {
+        
+                            System.out.println("bravo ti fidi del buono valeeesh");
+        
+                        }
+
+                    }
         }
     }
 }
